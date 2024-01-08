@@ -1,0 +1,123 @@
+/* Header.css */
+/* Header.css */
+
+/* ... Your existing styles ... */
+
+/* Media query for screen width less than 500px */
+
+.app-header {
+  background-color: #02a430;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 50px; /* Adjust the size as needed */
+    margin-right: 10px; /* Adjust spacing between icon and app name */
+  }
+  
+  .right-content {
+    display: flex;
+    align-items: center;
+  }
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-right: 15px; /* Add margin to separate links and button */
+}
+
+nav li {
+  margin: 0 15px;
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center items vertically */
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+  text-align: center; /* Center the text within the <a> element */
+  width: 100%; /* Fill the available width within the <li> */
+}
+
+nav a:hover {
+  color: #ecf0f1;
+}
+
+.logout_button {
+  background-color: #e74c3c;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logout_button:hover {
+  background-color: #c0392b;
+}
+.menu-toggle{
+    display: none;
+      background-color: #01690e;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+}
+@media (max-width: 530px) {
+    .left-content{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .menu-toggle{
+        display: inline-block;
+    }
+    .right-content {
+      background-color: #02a430; /* Match the header background color */
+      border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add box shadow for a dropdown effect */
+      display: none; /* Initially hide the dropdown */
+    }
+  
+  
+    .nav-links {
+      flex-direction: column; /* Change flex direction to column for stacking links */
+      width: 100%; /* Take up full width of the dropdown */
+    }
+  
+    .nav-links.open {
+      display: flex; /* Show the dropdown when the menu is open */
+    }
+  
+    .nav-links li {
+      margin: 5px 0; /* Adjust spacing between links in the dropdown */
+    }
+  
+    .menu-open {
+      display: block;
+      background-color: #02a430; /* Match the header background color */
+      border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    }
+  }
+  
